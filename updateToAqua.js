@@ -15,7 +15,7 @@ function updateToAqua() {
   for (var i = 0; i < itemResponses.length; i++) {
     var itemResponse = itemResponses[i];
     arrayTitles[i] = itemResponse.getItem().getTitle();
-    arrayAnswers[i] = JSON.stringify(itemResponse.getResponse());
+    arrayAnswers[i] = itemResponse.getResponse();
   }
   var clientNum = formResponses.length+1; //here we store the number of the last form submitted
 
